@@ -127,6 +127,10 @@ meanstd.data$Activity[meanstd.data$Activity == 6] <- "Laying"
 ## PARTE 5: From the data set in step 4, creates a second, independent tidy
 ## data set with the average of each variable for each activity and each subject
 
+## Carregando a libraria
+
+library(dplyr)
+
 ## Agrupando e ordenando o conjunto de dados para obter a media
 
 ordered.data <- group_by(meanstd.data, Subject, Activity)
